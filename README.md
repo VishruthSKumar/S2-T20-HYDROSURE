@@ -59,7 +59,7 @@ time.
 <details>
   <summary>Detail</summary>
 
-  > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Verilog/S2-T20.v
+  > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/df3108d6bb7835548d40711aef36a32e99e59a83/Verilog/S2-T20.v
   > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Verilog/S2-T20_tb.v
 </details>
 
