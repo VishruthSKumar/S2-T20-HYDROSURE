@@ -64,11 +64,15 @@ time.
 </details>
 
 <!-- Sixth Section -->
-## Verilog Code
+## References
 <details>
   <summary>Detail</summary>
 
-  > Update ~5 references in order
+  > >https://circuitdigest.com/microcontroller-projects/interfacing-soil-moisture-sensor-with-arduino-uno
+> https://nevonprojects.com/plant-soil-moisture-ph-sensing-alarm-using-8051/
+>https://youtu.be/ZGlm72xhhqU?feature=shared
+>https://www.geeksforgeeks.org/soil-moisture-measurement-using-arduino-and-soil-moisture-sensor/
+>https://www.sciencebuddies.org/science-fair-projects/project-ideas/Elec_p066/electricityelectronics/build-an-electronic-soil-moisture-sensor-to-conserve-water
 </details>
      
 
