@@ -59,7 +59,8 @@ time.
 <details>
   <summary>Detail</summary>
 
-  > Neatly update the Verilog code in code style only.
+  > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Verilog/S2-T20.v
+  > Testbench :  
 </details>
 
 <!-- Sixth Section -->
