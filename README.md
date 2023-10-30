@@ -51,7 +51,7 @@ time.
 <details>
   <summary>Detail</summary>
 
-  > https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Logisim/LOGISIM.circ
+  > https://github.com/VishruthSKumar/S2_TEAM_20_/blob/07b0044c5a9d5c05510642b7ed797be4a005b0c0/Logisim/LOGISIM.circ
 </details>
 
 <!-- Fifth Section -->
