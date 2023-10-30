@@ -51,7 +51,7 @@ time.
 <details>
   <summary>Detail</summary>
 
-  > Update a neat logisim circuit diagram
+  > https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Logisim/LOGISIM.circ
 </details>
 
 <!-- Fifth Section -->
