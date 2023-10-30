@@ -43,7 +43,7 @@ time.
 <details>
   <summary>Detail</summary>
 
-  > Explain the working of your model with the help of a functional table (compulsory) followed by the flowchart.
+  > https://drive.google.com/file/d/1rYcJ-d5nwh42e9u8xAcuKVaSAy0qt3nu/view?usp=sharing
 </details>
 
 <!-- Fourth Section -->
