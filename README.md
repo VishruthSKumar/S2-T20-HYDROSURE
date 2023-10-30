@@ -60,7 +60,7 @@ time.
   <summary>Detail</summary>
 
   > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Verilog/S2-T20.v
-  > Testbench :  
+  > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/main/Verilog/S2-T20_tb.v
 </details>
 
 <!-- Sixth Section -->
