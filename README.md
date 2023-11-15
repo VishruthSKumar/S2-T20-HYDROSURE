@@ -78,8 +78,6 @@ power of technology to enhance the project's overall effectiveness and impact.
   <summary>Detail</summary>
 
   > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/df3108d6bb7835548d40711aef36a32e99e59a83/Verilog/S2-T20.v
-  > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/6970d05a4999e1d13abd378c3d10114265bc41ed/Verilog/S2-T20_tb.v
-  
 Main code
 -------------------------------------------------------------------------------------------------------------------------
   module circuit(ms,ts,ct,o1,o2,o3);
@@ -132,6 +130,7 @@ Main code
 
    endmodule  
 
+ > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/6970d05a4999e1d13abd378c3d10114265bc41ed/Verilog/S2-T20_tb.v
  Testbench : 
  ----------------------------------------------------------------------------------------------------------------------------------------
  module ddsproject_tb;
