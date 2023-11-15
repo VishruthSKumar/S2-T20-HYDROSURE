@@ -170,13 +170,10 @@ Main code
         end
     #10 ct = ct + 4'b0001;
     end
-end
-
-        
-	initial #10000 $finish;
+  end
+initial #10000 $finish;
 endmodule
-             
-</details>
+
 
 <!-- Sixth Section -->
 ## References
