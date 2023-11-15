@@ -80,8 +80,8 @@ power of technology to enhance the project's overall effectiveness and impact.
   > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/df3108d6bb7835548d40711aef36a32e99e59a83/Verilog/S2-T20.v
   > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/6970d05a4999e1d13abd378c3d10114265bc41ed/Verilog/S2-T20_tb.v
   
-  > Main code
-  >-------------------------------------------------------------------------------------------------------------------------
+Main code
+-------------------------------------------------------------------------------------------------------------------------
   >module circuit(ms,ts,ct,o1,o2,o3);
 
    input [3:0]ms;
@@ -121,9 +121,12 @@ power of technology to enhance the project's overall effectiveness and impact.
    input[3:0]A;
    input [3:0]B;
    output E,G,S;
+  
    assign E=!(A[3]^B[3])&!(A[2]^B[2])&!(A[1]^B[1])&!(A[0]^B[0]);
+  
    assign G=(A[3]&(!(B[3])))|(!(A[3]^B[3])&(A[2]&(!(B[2]))))|((!(A[3]^B[3])&!(A[2]^B[2]))&(A[1]&(!(B[1]))))|((!(A[3]^B[3])&!(A[2]^B[2])&! 
             (A[1]^B[1]))&(A[0]&(!(B[0]))));
+   
    assign S=(B[3]&(!(A[3])))|(!(A[3]^B[3])&(B[2]&(!(A[2]))))|((!(A[3]^B[3])&!(A[2]^B[2]))&(B[1]&(!(A[1]))))|((!(A[3]^B[3])&!(A[2]^B[2])&! 
             (A[1]^B[1]))&(B[0]&(!(A[0]))));
 
