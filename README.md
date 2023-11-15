@@ -82,7 +82,7 @@ power of technology to enhance the project's overall effectiveness and impact.
   
 Main code
 -------------------------------------------------------------------------------------------------------------------------
-  >module circuit(ms,ts,ct,o1,o2,o3);
+  module circuit(ms,ts,ct,o1,o2,o3);
 
    input [3:0]ms;
    input [3:0]ts;
