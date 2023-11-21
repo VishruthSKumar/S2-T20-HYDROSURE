@@ -61,7 +61,114 @@ power of technology to enhance the project's overall effectiveness and impact.
 <details>
   <summary>Detail</summary>
 
-  > https://drive.google.com/file/d/1rYcJ-d5nwh42e9u8xAcuKVaSAy0qt3nu/view?usp=sharing
+>
+DESCRIPTION
+The module consists of a moisture sensor, temperature sensor, priority 
+encoders, 3-bit binary adder, magnitude comparator and a crop value 
+counter. The working begins with collecting inputs from the moisture and 
+temperature sensors. The crop value counter sets the type of crop which is to 
+be irrigated. The rest of the components are utilised to manipulate and blend 
+the input to perform the functionality of setting an optimal threshold and 
+deciding the amount of water needed.
+> 
+MOISTURE SENSOR:
+A capacitive moisture sensor has been used which measures the moisture 
+content in a given soil sample. The moisture sensor has been coupled with an 
+Arduino device. The output of the moisture sensor is in the range of 0-100.The 
+Arduino code written enables us to manipulate the sensed value such that it 
+gives 0 if the sensed value is in the range 0-10,1 if the sensed value is in the 
+range 11-20 and so on.
+>
+TEMPERATURE SENSOR:
+A capacitive temperature sensor has been employed which measures the 
+temperature conditions of the atmosphere at the instant. It is also coupled
+with an Arduino device. The range of values is 0-100 but practically speaking 
+it is just in very extreme conditions that the temperature exceeds 50. So, the 
+Arduino code is written to map the sensed values as 0 in the range 0-10,1 in 
+the range 11-20 and so on till 4 in the range 41-50.
+>
+CROP TYPE SELECTOR:
+We have deployed a predefined menu to select the type of crop in use. For,
+the sake of the project prototype we have listed down a few crops in the 
+order of the increasing amount of water they need. Each of them is given a 
+decimal number as reference in the order of their requirement of water. We 
+have selected rice, wheat, maize, bean and sugarcane as prototypes. Each of 
+the crops is given a value as shown in the table below depending on their 
+optimal moisture requirement. Sugarcane is given a value 4 which implies it 
+has the highest water requirement from amongst the selected, conversely 
+bean is given a value 0 implying it has the least water requirement. The
+selection of the crop has been implemented using a synchronous 3-bit updown counter circuit counting from 0 to 4 giving the output in binary format.
+>
+PRIORITY ENCODERS:
+The values given by the moisture sensor and temperature sensors is passed 
+into priority encoders to convert them to binary form. The value from the 
+moisture sensor is fed into a 4-bit priority encoder and the value from the 
+temperature sensor is passed into a 3-bit priority encoder.
+>
+4-BIT BINARY ADDER:
+This component’s functionality is to set an optimal threshold value for the 
+moisture content needed depending on the crop type and the input from the
+temperature sensor modified using a 3-bit priority encoder. The binary values 
+from the 3-bit priority encoder and the crop type selector are fed in as inputs 
+with a 0 appended to them to make them as 4-bit inputs. The output of this 4-
+bit binary adder gives us with a reasonable threshold for the moisture content 
+that is required in the existing conditions.
+>
+4-BIT MAGNITUDE COMPARATOR:
+This component compares the output of the 4-bit binary adder with the value 
+given by the moisture sensor encoded to binary using a 4 bit priority encoder.
+It gives three outputs after comparing the given values. Now, we water the 
+crop only if the value from the moisture sensor is less or equal to the 
+threshold value. The following actions are undertaken depending on the 
+output of the magnitude comparator assuming a and b are inputs given to it.
+
+>
+Outcome ACTION
+a<b The crop is watered
+a=b The crop is watered
+a>b No watering is carried out
+BEAN 0
+WHEAT 1
+MAIZE 2
+RICE 3
+SUGARCANE 4
+>
+WORKING OF THE MODULE:
+The major functionality of the module is dependent on the following:
+1.The Crop type selector.
+2.Encoding the output from the sensors.
+3.Setting the threshold using the 4-bit binary adder.
+4.Comparing the values using the magnitude comparator.
+
+>
+SETTING THE THRESHOLD:
+This is carried out by the 4-bit binary adder using the outputs from the crop 
+type selector and the temperature sensor as inputs according to the 
+following functional tables:
+
+>![Screenshot 2023-11-21 110621](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/f8e68bb2-a51d-4eef-b746-d7fbc511bac0)
+
+ 
+>
+CROP TYPE SELECTOR:
+The crop type selector uses synchronous 3-bit up down circuit, counting 
+numbers from 0 to 4 since the prototype has 4 types of crops. This circuit 
+consists of 3 T flip-flops in the sequential circuit segment and comprises of 
+combination of AND & OR gates in combinational part. It uses LED display to 
+the output in binary form (7- segment display can also be used). It uses a 
+pushbutton to navigate through inputs. Reverser button is used to change the 
+direction of navigation (ascending (0) / descending (1)). The upper limit of the 
+crop is 4 and returns back to 0 on further push up (vice-versa if direction is 
+reversed).
+
+> ![Screenshot 2023-11-21 110651](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/4a0e69c9-43a4-4e62-8018-5781590948d0)
+
+>
+FLOWCHART :
+
+![Screenshot 2023-11-21 110718](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/362aed40-ecfe-46cd-a8b8-cc8bd8c92787)
+
+  
 </details>
 
 <!-- Fourth Section -->
@@ -73,7 +180,7 @@ power of technology to enhance the project's overall effectiveness and impact.
   > ![Screenshot 2023-11-21 103541](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/26c281ed-ee21-4896-9df2-bea15e1aaaf3)
 > ![Screenshot 2023-11-21 103626](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/925205de-adca-47a8-a3ff-a43cfd146462)
 
-https://github.com/VishruthSKumar/S2_TEAM_20_/blob/07b0044c5a9d5c05510642b7ed797be4a005b0c0/Logisim/LOGISIM.circ
+
 </details>
 
 <!-- Fifth Section -->
@@ -81,10 +188,10 @@ https://github.com/VishruthSKumar/S2_TEAM_20_/blob/07b0044c5a9d5c05510642b7ed797
 <details>
   <summary>Detail</summary>
 
-  > Main code : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/df3108d6bb7835548d40711aef36a32e99e59a83/Verilog/S2-T20.v
-Main code
+  > Main code :
 -------------------------------------------------------------------------------------------------------------------------
-  module circuit(ms,ts,ct,o1,o2,o3);
+  ```
+module circuit(ms,ts,ct,o1,o2,o3);
 
    input [3:0]ms;
    input [3:0]ts;
@@ -132,12 +239,13 @@ Main code
    assign S=(B[3]&(!(A[3])))|(!(A[3]^B[3])&(B[2]&(!(A[2]))))|((!(A[3]^B[3])&!(A[2]^B[2]))&(B[1]&(!(A[1]))))|((!(A[3]^B[3])&!(A[2]^B[2])&! 
             (A[1]^B[1]))&(B[0]&(!(A[0]))));
 
-   endmodule  
+   endmodule
+```
 
- > Testbench : https://github.com/VishruthSKumar/S2_TEAM_20_/blob/6970d05a4999e1d13abd378c3d10114265bc41ed/Verilog/S2-T20_tb.v
- Testbench : 
+ > Testbench : 
  ----------------------------------------------------------------------------------------------------------------------------------------
- module ddsproject_tb;
+ ```
+module ddsproject_tb;
 	wire o1,o2,o3;
 	reg [3:0]ms;
     reg [3:0]ts;
@@ -176,6 +284,8 @@ Main code
   end
 initial #10000 $finish;
 endmodule
+```
+</details>
 
 
 <!-- Sixth Section -->
@@ -183,11 +293,15 @@ endmodule
 <details>
   <summary>Detail</summary>
 
-  > >https://circuitdigest.com/microcontroller-projects/interfacing-soil-moisture-sensor-with-arduino-uno
-> https://nevonprojects.com/plant-soil-moisture-ph-sensing-alarm-using-8051/
->https://youtu.be/ZGlm72xhhqU?feature=shared
->https://www.geeksforgeeks.org/soil-moisture-measurement-using-arduino-and-soil-moisture-sensor/
->https://www.sciencebuddies.org/science-fair-projects/project-ideas/Elec_p066/electricityelectronics/build-an-electronic-soil-moisture-sensor-to-conserve-water
+  >1.https://circuitdigest.com/microcontroller-projects/interfacing-soil-moisture-sensor-with-arduino-uno
+
+>2.https://nevonprojects.com/plant-soil-moisture-ph-sensing-alarm-using-8051
+
+>3.https://youtu.be/ZGlm72xhhqU?feature=shared
+
+>4.https://www.geeksforgeeks.org/soil-moisture-measurement-using-arduino-and-soil-moisture-sensor
+
+>5.https://www.sciencebuddies.org/science-fair-projects/project-ideas/Elec_p066/electricityelectronics/build-an-electronic-soil-moisture-sensor-to-conserve-water
 </details>
      
 
