@@ -69,7 +69,11 @@ power of technology to enhance the project's overall effectiveness and impact.
 <details>
   <summary>Detail</summary>
 
-  > https://github.com/VishruthSKumar/S2_TEAM_20_/blob/07b0044c5a9d5c05510642b7ed797be4a005b0c0/Logisim/LOGISIM.circ
+
+  > ![Screenshot 2023-11-21 103541](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/26c281ed-ee21-4896-9df2-bea15e1aaaf3)
+> ![Screenshot 2023-11-21 103626](https://github.com/VishruthSKumar/S2-T20-HYDROSURE/assets/149406271/925205de-adca-47a8-a3ff-a43cfd146462)
+
+https://github.com/VishruthSKumar/S2_TEAM_20_/blob/07b0044c5a9d5c05510642b7ed797be4a005b0c0/Logisim/LOGISIM.circ
 </details>
 
 <!-- Fifth Section -->
